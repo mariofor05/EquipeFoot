@@ -1,0 +1,56 @@
+1763864033247:projects
+1763864055509:project js
+1764026613153:project sharedJS
+1764028481161:project js
+1764029936954:js /clean
+1764029942886:js/fastLinkJS
+1764029957257:show js/fastLinkJS
+1764030292421:js/clean
+1764030302467:js/fastLinkJS
+1764030475428:js/clean
+1764030482195:js/fastLinkJS
+1764030680353:js/clean
+1764030695115:js/fastLinkJS
+1764030919671:js/clean
+1764030929866:js/fastLinkJS
+1764031330018:reload
+1764031338116:js/clean
+1764031344498:js/fastLinkJS
+1764031537287:reload
+1764031547633:sharedJVM/compile
+1764031557410:sharedJS/compile
+1764031564522:js/clean
+1764031569852:js/fastLinkJS
+1764031817953:reload
+1764031822786:js/clean
+1764031831836:js/fastLinkJS
+1764032077138:reload
+1764032085874:sharedJVM/compile
+1764032281983:reload
+1764032291191:sharedJVM/compile
+1764032966638:reload
+1764032975255:sharedJVM/compile
+1764032991103:sharedJS/compile
+1764033000581:js/clean
+1764033007256:js/fastLinkJS
+1764033097707:js/fatLinkJS
+1764033109481:js/fastLinkJS
+1764033118051:[info] compiling 1 Scala source to C:\\Users\\mario\\EquipeFoot\\apps\\js\\target\\scala-3.3.1\\classes ...
+1764033118110:[error] -- [E008] Not Found Error: C:\\Users\\mario\\EquipeFoot\\apps\\js\\src\\main\\scala\\apps\\EDF\\UI.scala:7:16
+1764033118144:[error] 7 |import apps.EDF.Types
+1764033118189:[error]   |                ^^^^^
+1764033118250:[error]   |                value Types is not a member of apps.EDF
+1764033118292:[error] one error found
+1764033118389:[error] (js / Compile / compileIncremental) Compilation failed
+1764033118464:[error] Total time: 1 s, completed 25 nov. 2025, 02:10:08
+1764033492763:reload
+1764033502526:sharedJVM/compile
+1764033630935:sharedJS/compile
+1764033635075:js/clean
+1764033640270:js/fastLinkJS
+1764033876881:show js/scalaJSLinkerOutputDirectory
+1764033926678:show js/fastLinkJSOutput
+1764034914376:js/fastLinkJS
+1764035086458:sharedJVM/compile
+1764035093494:sharedJS/compile
+1764035109468:js/fastLinkJS

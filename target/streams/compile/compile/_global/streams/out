@@ -1,0 +1,106 @@
+[error] -- [E008] Not Found Error: C:\Users\mario\EquipeFoot\src\main\scala\apps\EDF\UI.scala:3:11 
+[error] 3 |import org.scalajs.dom
+[error]   |       ^^^^^^^^^^^
+[error]   |       value scalajs is not a member of org
+[error] -- [E008] Not Found Error: C:\Users\mario\EquipeFoot\src\main\scala\apps\EDF\UI.scala:4:11 
+[error] 4 |import org.scalajs.dom.{document, HTMLElement, HTMLInputElement}
+[error]   |       ^^^^^^^^^^^
+[error]   |       value scalajs is not a member of org
+[error] -- [E008] Not Found Error: C:\Users\mario\EquipeFoot\src\main\scala\apps\EDF\UI.scala:5:13 
+[error] 5 |import scala.scalajs.js.annotation.JSExportTopLevel
+[error]   |       ^^^^^^^^^^^^^
+[error]   |       value scalajs is not a member of scala
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\src\main\scala\apps\EDF\UI.scala:9:21 
+[error] 9 |  private var state: AppState =
+[error]   |                     ^^^^^^^^
+[error]   |                     Not found: type AppState
+[error]   |
+[error]   | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\src\main\scala\apps\EDF\UI.scala:10:4 
+[error] 10 |    Logic.init match
+[error]    |    ^^^^^
+[error]    |    Not found: Logic
+[error]    |
+[error]    | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\src\main\scala\apps\EDF\UI.scala:11:11 
+[error] 11 |      case ServerToClient.StateUpdated(s) => s
+[error]    |           ^^^^^^^^^^^^^^
+[error]    |           Not found: ServerToClient
+[error]    |
+[error]    | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\src\main\scala\apps\EDF\UI.scala:12:11 
+[error] 12 |      case ServerToClient.Error(msg) =>
+[error]    |           ^^^^^^^^^^^^^^
+[error]    |           Not found: ServerToClient
+[error]    |
+[error]    | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\src\main\scala\apps\EDF\UI.scala:14:8 
+[error] 14 |        AppState(Nil, None, None)
+[error]    |        ^^^^^^^^
+[error]    |        Not found: AppState
+[error]    |
+[error]    | longer explanation available when compiling with `-explain`
+[error] -- [E007] Type Mismatch Error: C:\Users\mario\EquipeFoot\src\main\scala\apps\EDF\UI.scala:120:20 
+[error] 120 |        for slot <- lineup.slots do
+[error]     |                    ^^^^^^
+[error]     |Found:    (lineup : Nothing)
+[error]     |Required: ?{ slots: ? }
+[error]     |Note that implicit conversions were not tried because the result of an implicit conversion
+[error]     |must be more specific than ?{ slots: ?{ foreach: [applied to (
+[error]     |  slot =>
+[error]     |    {
+[error]     |      val li = document.createElement("li")
+[error]     |      val playerName =
+[error]     |        slot.player.flatMap(
+[error]     |          pid =>
+[error]     |            state.teams.find(_$5 => _$5.id == teamId).flatMap(
+[error]     |              _$6 => _$6.players.find(_$7 => _$7.id == pid))
+[error]     |        ).map(_$8 => _$8.name).getOrElse("[vide]")
+[error]     |      li.textContent =
+[error]     |        s"
+[error]     |          {
+[error]     |            {
+[error]     |              slot.line
+[error]     |            }
+[error]     |          }
+[error]     |           #{
+[error]     |            {
+[error]     |              slot.indexInLine
+[error]     |            }
+[error]     |          }
+[error]     |          : {
+[error]     |            {
+[error]     |              slot.expectedPosition
+[error]     |            }
+[error]     |          }
+[error]     |         -> {playerName}"
+[error]     |      ul.appendChild(li)
+[error]     |    }
+[error]     |) returning <?>] } }
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\src\main\scala\apps\EDF\UI.scala:135:24 
+[error] 135 |  private def send(msg: ClientToServer): Unit =
+[error]     |                        ^^^^^^^^^^^^^^
+[error]     |                        Not found: type ClientToServer
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\src\main\scala\apps\EDF\UI.scala:136:4 
+[error] 136 |    Logic.update(state, msg) match
+[error]     |    ^^^^^
+[error]     |    Not found: Logic
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\src\main\scala\apps\EDF\UI.scala:137:11 
+[error] 137 |      case ServerToClient.StateUpdated(newState) =>
+[error]     |           ^^^^^^^^^^^^^^
+[error]     |           Not found: ServerToClient
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\src\main\scala\apps\EDF\UI.scala:140:11 
+[error] 140 |      case ServerToClient.Error(message) =>
+[error]     |           ^^^^^^^^^^^^^^
+[error]     |           Not found: ServerToClient
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] 13 errors found

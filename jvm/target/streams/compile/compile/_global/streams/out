@@ -1,0 +1,547 @@
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:8:12 
+[error] 8 |  def init: ServerToClient =
+[error]   |            ^^^^^^^^^^^^^^
+[error]   |            Not found: type ServerToClient
+[error]   |
+[error]   | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:9:16 
+[error] 9 |    val state = AppState(
+[error]   |                ^^^^^^^^
+[error]   |                Not found: AppState
+[error]   |
+[error]   | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:14:4 
+[error] 14 |    ServerToClient.StateUpdated(state)
+[error]    |    ^^^^^^^^^^^^^^
+[error]    |    Not found: ServerToClient
+[error]    |
+[error]    | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:17:20 
+[error] 17 |  def update(state: AppState, msg: ClientToServer): ServerToClient =
+[error]    |                    ^^^^^^^^
+[error]    |                    Not found: type AppState
+[error]    |
+[error]    | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:17:35 
+[error] 17 |  def update(state: AppState, msg: ClientToServer): ServerToClient =
+[error]    |                                   ^^^^^^^^^^^^^^
+[error]    |                                   Not found: type ClientToServer
+[error]    |
+[error]    | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:17:52 
+[error] 17 |  def update(state: AppState, msg: ClientToServer): ServerToClient =
+[error]    |                                                    ^^^^^^^^^^^^^^
+[error]    |                                          Not found: type ServerToClient
+[error]    |
+[error]    | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:20:11 
+[error] 20 |      case ClientToServer.CreateTeam(name, nbPlayers) =>
+[error]    |           ^^^^^^^^^^^^^^
+[error]    |           Not found: ClientToServer
+[error]    |
+[error]    | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:21:22 
+[error] 21 |        val newId   = TeamId(UUID.randomUUID().toString)
+[error]    |                      ^^^^^^
+[error]    |                      Not found: TeamId
+[error]    |
+[error]    | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:22:22 
+[error] 22 |        val newTeam = Team(
+[error]    |                      ^^^^
+[error]    |                      Not found: Team
+[error]    |
+[error]    | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:35:8 
+[error] 35 |        ServerToClient.StateUpdated(newState)
+[error]    |        ^^^^^^^^^^^^^^
+[error]    |        Not found: ServerToClient
+[error]    |
+[error]    | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:37:11 
+[error] 37 |      case ClientToServer.DeleteTeam(teamId) =>
+[error]    |           ^^^^^^^^^^^^^^
+[error]    |           Not found: ClientToServer
+[error]    |
+[error]    | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:39:10 
+[error] 39 |          ServerToClient.Error(s"Equipe inconnue: ${teamId.value}")
+[error]    |          ^^^^^^^^^^^^^^
+[error]    |          Not found: ServerToClient
+[error]    |
+[error]    | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:44:31 
+[error] 44 |              case Some(id) if id == teamId => None
+[error]    |                               ^^
+[error]    |                               Not found: id
+[error]    |
+[error]    | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:48:31 
+[error] 48 |              case Some(lu) if lu.teamId == teamId => None
+[error]    |                               ^^
+[error]    |                               Not found: lu
+[error]    |
+[error]    | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:55:10 
+[error] 55 |          ServerToClient.StateUpdated(newState)
+[error]    |          ^^^^^^^^^^^^^^
+[error]    |          Not found: ServerToClient
+[error]    |
+[error]    | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:58:11 
+[error] 58 |      case ClientToServer.AddPlayer(teamId, rawPlayerId, name, number, preferred, others) =>
+[error]    |           ^^^^^^^^^^^^^^
+[error]    |           Not found: ClientToServer
+[error]    |
+[error]    | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:61:12 
+[error] 61 |            ServerToClient.Error(s"Equipe inconnue: ${teamId.value}")
+[error]    |            ^^^^^^^^^^^^^^
+[error]    |            Not found: ServerToClient
+[error]    |
+[error]    | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:64:15 
+[error] 64 |            if team.players.exists(_.id.value == rawPlayerId) then
+[error]    |               ^^^^
+[error]    |               Not found: team
+[error]    |
+[error]    | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:65:14 
+[error] 65 |              ServerToClient.Error(s"Identifiant joueur déjà utilisé: $rawPlayerId")
+[error]    |              ^^^^^^^^^^^^^^
+[error]    |              Not found: ServerToClient
+[error]    |
+[error]    | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:66:20 
+[error] 66 |            else if team.players.size >= team.nbPlayers then
+[error]    |                    ^^^^
+[error]    |                    Not found: team
+[error]    |
+[error]    | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:67:14 
+[error] 67 |              ServerToClient.Error(s"Effectif complet pour l'équipe ${team.name}")
+[error]    |              ^^^^^^^^^^^^^^
+[error]    |              Not found: ServerToClient
+[error]    |
+[error]    | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:69:27 
+[error] 69 |              val player = Player(
+[error]    |                           ^^^^^^
+[error]    |                           Not found: Player
+[error]    |
+[error]    | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:70:21 
+[error] 70 |                id = PlayerId(rawPlayerId),
+[error]    |                     ^^^^^^^^
+[error]    |                     Not found: PlayerId
+[error]    |
+[error]    | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:77:32 
+[error] 77 |              val updatedTeam = team.copy(players = team.players :+ player)
+[error]    |                                ^^^^
+[error]    |                                Not found: team
+[error]    |
+[error]    | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:80:14 
+[error] 80 |              ServerToClient.StateUpdated(newState)
+[error]    |              ^^^^^^^^^^^^^^
+[error]    |              Not found: ServerToClient
+[error]    |
+[error]    | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:82:11 
+[error] 82 |      case ClientToServer.RemovePlayer(teamId, playerId) =>
+[error]    |           ^^^^^^^^^^^^^^
+[error]    |           Not found: ClientToServer
+[error]    |
+[error]    | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:85:12 
+[error] 85 |            ServerToClient.Error(s"Equipe inconnue: ${teamId.value}")
+[error]    |            ^^^^^^^^^^^^^^
+[error]    |            Not found: ServerToClient
+[error]    |
+[error]    | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:88:16 
+[error] 88 |            if !team.players.exists(_.id == playerId) then
+[error]    |                ^^^^
+[error]    |                Not found: team
+[error]    |
+[error]    | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:89:14 
+[error] 89 |              ServerToClient.Error(s"Joueur inconnu dans l'équipe: ${playerId.value}")
+[error]    |              ^^^^^^^^^^^^^^
+[error]    |              Not found: ServerToClient
+[error]    |
+[error]    | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:91:32 
+[error] 91 |              val updatedTeam = team.copy(players = team.players.filterNot(_.id == playerId))
+[error]    |                                ^^^^
+[error]    |                                Not found: team
+[error]    |
+[error]    | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:97:35 
+[error] 97 |                  case Some(lu) if lu.teamId == teamId =>
+[error]    |                                   ^^
+[error]    |                                   Not found: lu
+[error]    |
+[error]    | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:98:39 
+[error] 98 |                    val cleanedSlots = lu.slots.map { slot =>
+[error]    |                                       ^^
+[error]    |                                       Not found: lu
+[error]    |
+[error]    | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:102:25 
+[error] 102 |                    Some(lu.copy(slots = cleanedSlots))
+[error]     |                         ^^
+[error]     |                         Not found: lu
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:106:14 
+[error] 106 |              ServerToClient.StateUpdated(newState)
+[error]     |              ^^^^^^^^^^^^^^
+[error]     |              Not found: ServerToClient
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:108:11 
+[error] 108 |      case ClientToServer.SetCaptain(teamId, captainOpt) =>
+[error]     |           ^^^^^^^^^^^^^^
+[error]     |           Not found: ClientToServer
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:111:12 
+[error] 111 |            ServerToClient.Error(s"Equipe inconnue: ${teamId.value}")
+[error]     |            ^^^^^^^^^^^^^^
+[error]     |            Not found: ServerToClient
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:115:33 
+[error] 115 |              case Some(cId) if !team.players.exists(_.id == cId) =>
+[error]     |                                 ^^^^
+[error]     |                                 Not found: team
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:116:16 
+[error] 116 |                ServerToClient.Error(s"Capitaine inconnu dans l'équipe: ${cId.value}")
+[error]     |                ^^^^^^^^^^^^^^
+[error]     |                Not found: ServerToClient
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:119:34 
+[error] 119 |                val updatedTeam = team.copy(capitaine = captainOpt)
+[error]     |                                  ^^^^
+[error]     |                                  Not found: team
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:122:16 
+[error] 122 |                ServerToClient.StateUpdated(newState)
+[error]     |                ^^^^^^^^^^^^^^
+[error]     |                Not found: ServerToClient
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:125:11 
+[error] 125 |      case ClientToServer.SelectTeam(teamId) =>
+[error]     |           ^^^^^^^^^^^^^^
+[error]     |           Not found: ClientToServer
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:127:10 
+[error] 127 |          ServerToClient.Error(s"Equipe inconnue: ${teamId.value}")
+[error]     |          ^^^^^^^^^^^^^^
+[error]     |          Not found: ServerToClient
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:131:31 
+[error] 131 |              case Some(lu) if lu.teamId == teamId => Some(lu)
+[error]     |                               ^^
+[error]     |                               Not found: lu
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:131:59 
+[error] 131 |              case Some(lu) if lu.teamId == teamId => Some(lu)
+[error]     |                                                           ^^
+[error]     |                                                         Not found: lu
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:137:10 
+[error] 137 |          ServerToClient.StateUpdated(newState)
+[error]     |          ^^^^^^^^^^^^^^
+[error]     |          Not found: ServerToClient
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:139:11 
+[error] 139 |      case ClientToServer.SetFormation(teamId, formationId) =>
+[error]     |           ^^^^^^^^^^^^^^
+[error]     |           Not found: ClientToServer
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:142:12 
+[error] 142 |            ServerToClient.Error(s"Equipe inconnue: ${teamId.value}")
+[error]     |            ^^^^^^^^^^^^^^
+[error]     |            Not found: ServerToClient
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:145:12 
+[error] 145 |            Formation.all.find(_.id == formationId) match
+[error]     |            ^^^^^^^^^
+[error]     |            Not found: Formation
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:147:16 
+[error] 147 |                ServerToClient.Error(s"Formation inconnue: ${formationId.value}")
+[error]     |                ^^^^^^^^^^^^^^
+[error]     |                Not found: ServerToClient
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:214:34 
+[error] 214 |  private def emptyLineup(teamId: TeamId, formation: Formation): Lineup =
+[error]     |                                  ^^^^^^
+[error]     |                                  Not found: type TeamId
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:214:53 
+[error] 214 |  private def emptyLineup(teamId: TeamId, formation: Formation): Lineup =
+[error]     |                                                     ^^^^^^^^^
+[error]     |                                             Not found: type Formation
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:214:65 
+[error] 214 |  private def emptyLineup(teamId: TeamId, formation: Formation): Lineup =
+[error]     |                                                                 ^^^^^^
+[error]     |                                                Not found: type Lineup
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:150:49 
+[error] 150 |                val lineup = emptyLineup(teamId, formation)
+[error]     |                                                 ^^^^^^^^^
+[error]     |                                                 Not found: formation
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:155:16 
+[error] 155 |                ServerToClient.StateUpdated(newState)
+[error]     |                ^^^^^^^^^^^^^^
+[error]     |                Not found: ServerToClient
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:157:11 
+[error] 157 |      case ClientToServer.PlacePlayerInSlot(teamId, slotId, playerIdOpt) =>
+[error]     |           ^^^^^^^^^^^^^^
+[error]     |           Not found: ClientToServer
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:160:12 
+[error] 160 |            ServerToClient.Error(s"Equipe inconnue: ${teamId.value}")
+[error]     |            ^^^^^^^^^^^^^^
+[error]     |            Not found: ServerToClient
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:163:12 
+[error] 163 |            /
+[error]     |            ^
+[error]     |            Not found: /
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:165:33 
+[error] 165 |              case Some(pid) if !team.players.exists(_.id == pid) =>
+[error]     |                                 ^^^^
+[error]     |                                 Not found: team
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:166:16 
+[error] 166 |                ServerToClient.Error(s"Joueur inconnu dans l'équipe: ${pid.value}")
+[error]     |                ^^^^^^^^^^^^^^
+[error]     |                Not found: ServerToClient
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:171:20 
+[error] 171 |                    ServerToClient.Error("Aucune compo active pour cette équipe")
+[error]     |                    ^^^^^^^^^^^^^^
+[error]     |                    Not found: ServerToClient
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:173:39 
+[error] 173 |                  case Some(lineup) if lineup.teamId != teamId =>
+[error]     |                                       ^^^^^^
+[error]     |                                       Not found: lineup
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:174:20 
+[error] 174 |                    ServerToClient.Error("La compo actuelle appartient à une autre équipe")
+[error]     |                    ^^^^^^^^^^^^^^
+[error]     |                    Not found: ServerToClient
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:181:26 
+[error] 181 |                          lineup.slots.map { s =>
+[error]     |                          ^^^^^^
+[error]     |                          Not found: lineup
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:186:26 
+[error] 186 |                          lineup.slots
+[error]     |                          ^^^^^^
+[error]     |                          Not found: lineup
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:194:36 
+[error] 194 |                    val newLineup = lineup.copy(slots = updatedSlots)
+[error]     |                                    ^^^^^^
+[error]     |                                    Not found: lineup
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:196:20 
+[error] 196 |                    ServerToClient.StateUpdated(newState)
+[error]     |                    ^^^^^^^^^^^^^^
+[error]     |                    Not found: ServerToClient
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:198:11 
+[error] 198 |      case ClientToServer.ClearLineup(teamId) =>
+[error]     |           ^^^^^^^^^^^^^^
+[error]     |           Not found: ClientToServer
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:200:31 
+[error] 200 |          case Some(lineup) if lineup.teamId == teamId =>
+[error]     |                               ^^^^^^
+[error]     |                               Not found: lineup
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:201:26 
+[error] 201 |            val cleared = lineup.copy(
+[error]     |                          ^^^^^^
+[error]     |                          Not found: lineup
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:205:12 
+[error] 205 |            ServerToClient.StateUpdated(newState)
+[error]     |            ^^^^^^^^^^^^^^
+[error]     |            Not found: ServerToClient
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:209:12 
+[error] 209 |            ServerToClient.StateUpdated(state)
+[error]     |            ^^^^^^^^^^^^^^
+[error]     |            Not found: ServerToClient
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:211:17 
+[error] 211 |  def end(state: AppState): ServerToClient =
+[error]     |                 ^^^^^^^^
+[error]     |                 Not found: type AppState
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:211:28 
+[error] 211 |  def end(state: AppState): ServerToClient =
+[error]     |                            ^^^^^^^^^^^^^^
+[error]     |                            Not found: type ServerToClient
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:212:4 
+[error] 212 |    ServerToClient.StateUpdated(state)
+[error]     |    ^^^^^^^^^^^^^^
+[error]     |    Not found: ServerToClient
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:216:6 
+[error] 216 |      LineupSlot(
+[error]     |      ^^^^^^^^^^
+[error]     |      Not found: LineupSlot
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:217:13 
+[error] 217 |        id = SlotId(0),
+[error]     |             ^^^^^^
+[error]     |             Not found: SlotId
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:218:15 
+[error] 218 |        line = Line.Goalkeeper,
+[error]     |               ^^^^
+[error]     |               Not found: Line
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:220:27 
+[error] 220 |        expectedPosition = Position.G,
+[error]     |                           ^^^^^^^^
+[error]     |                           Not found: Position
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:226:8 
+[error] 226 |        LineupSlot(
+[error]     |        ^^^^^^^^^^
+[error]     |        Not found: LineupSlot
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:227:15 
+[error] 227 |          id = SlotId(1 + i),
+[error]     |               ^^^^^^
+[error]     |               Not found: SlotId
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:228:17 
+[error] 228 |          line = Line.Defense,
+[error]     |                 ^^^^
+[error]     |                 Not found: Line
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:230:29 
+[error] 230 |          expectedPosition = Position.DC,
+[error]     |                             ^^^^^^^^
+[error]     |                             Not found: Position
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:238:8 
+[error] 238 |        LineupSlot(
+[error]     |        ^^^^^^^^^^
+[error]     |        Not found: LineupSlot
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:239:15 
+[error] 239 |          id = SlotId(midStart + i),
+[error]     |               ^^^^^^
+[error]     |               Not found: SlotId
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:240:17 
+[error] 240 |          line = Line.Midfield,
+[error]     |                 ^^^^
+[error]     |                 Not found: Line
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:242:29 
+[error] 242 |          expectedPosition = Position.MC,
+[error]     |                             ^^^^^^^^
+[error]     |                             Not found: Position
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:250:8 
+[error] 250 |        LineupSlot(
+[error]     |        ^^^^^^^^^^
+[error]     |        Not found: LineupSlot
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:251:15 
+[error] 251 |          id = SlotId(attStart + i),
+[error]     |               ^^^^^^
+[error]     |               Not found: SlotId
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:252:17 
+[error] 252 |          line = Line.Attack,
+[error]     |                 ^^^^
+[error]     |                 Not found: Line
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:254:29 
+[error] 254 |          expectedPosition = Position.BU,
+[error]     |                             ^^^^^^^^
+[error]     |                             Not found: Position
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] -- [E006] Not Found Error: C:\Users\mario\EquipeFoot\jvm\src\main\scala\apps\EDF\Logic.scala:259:4 
+[error] 259 |    Lineup(
+[error]     |    ^^^^^^
+[error]     |    Not found: Lineup
+[error]     |
+[error]     | longer explanation available when compiling with `-explain`
+[error] 91 errors found

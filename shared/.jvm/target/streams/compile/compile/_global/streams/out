@@ -1,0 +1,58 @@
+[error] -- [E172] Type Error: C:\Users\mario\EquipeFoot\shared\src\main\scala\apps\EDF\Wires.scala:35:33 
+[error]  35 |given ReadWriter[Position]     = macroRW
+[error]     |                                 ^^^^^^^
+[error]     |No given instance of type ReadersVersionSpecific_this.Reader[(Position.G : Position)] was found.
+[error]     |I found:
+[error]     |
+[error]     |    upickle.default.superTypeReader[(Position.G : Position), V](
+[error]     |      Position#G.$asInstanceOf[
+[error]     |        
+[error]     |          scala.deriving.Mirror.Singleton{
+[error]     |            type MirroredMonoType = (Position.G : Position);
+[error]     |              type MirroredType = (Position.G : Position);
+[error]     |              type MirroredLabel = ("G" : String)
+[error]     |          }
+[error]     |        
+[error]     |      ],
+[error]     |    given_ReadWriter_Position,
+[error]     |      Position.$asInstanceOf[
+[error]     |        
+[error]     |          scala.deriving.Mirror.Sum{
+[error]     |            type MirroredMonoType² = Position; type MirroredType = Position;
+[error]     |              type MirroredLabel = ("Position" : String);
+[error]     |              type MirroredElemTypes = ((Position.G : Position),
+[error]     |                (Position.DD : Position), (Position.DG : Position),
+[error]     |                (Position.DC : Position), (Position.MDC : Position),
+[error]     |                (Position.MC : Position), (Position.MOC : Position),
+[error]     |                (Position.MG : Position), (Position.MD : Position),
+[error]     |                (Position.BU : Position), (Position.AD : Position),
+[error]     |                (Position.AG : Position));
+[error]     |              type MirroredElemLabels = (("G" : String), ("DD" : String),
+[error]     |                ("DG" : String), ("DC" : String), ("MDC" : String),
+[error]     |                ("MC" : String), ("MOC" : String), ("MG" : String),
+[error]     |                ("MD" : String), ("BU" : String), ("AD" : String), ("AG" : String))
+[error]     |          }
+[error]     |        
+[error]     |      ],
+[error]     |    /* missing */summon[util.NotGiven[upickle.core.CurrentlyDeriving[V]]])
+[error]     |
+[error]     |But no implicit values were found that match type util.NotGiven[upickle.core.CurrentlyDeriving[V]]
+[error]     |
+[error]     |where:    MirroredMonoType  is a type in trait Singleton which is an alias of (Singleton.this : scala.deriving.Mirror.Singleton)
+[error]     |          MirroredMonoType² is a type in trait Mirror with bounds 
+[error]     |.
+[error]     |
+[error]     |The following import might make progress towards fixing the problem:
+[error]     |
+[error]     |  import upickle.default.ReadWriter.join
+[error]     |
+[error]     |---------------------------------------------------------------------------
+[error]     |Inline stack trace
+[error]     |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[error]     |This location contains code that was inlined from package.scala:174
+[error]     |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[error]     |This location contains code that was inlined from package.scala:174
+[error]     |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[error]     |This location contains code that was inlined from package.scala:174
+[error]      ---------------------------------------------------------------------------
+[error] one error found

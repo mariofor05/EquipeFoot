@@ -1,0 +1,25 @@
+[0m[[0m[0minfo[0m] [0m[0mFast optimizing C:\Users\mario\EquipeFoot\apps\js\target\scala-3.3.1\equipefoot-js-fastopt[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: Compute reachability: 11278 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: Assemble LinkedClasses: 12395 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: 42931 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Batch mode: false[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Incremental part: 16069 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Elidable constructors: 789 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Optimizing 1 methods.[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Optimizer part: 1226 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: 25595 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: Compute reachability: 9774 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: Assemble LinkedClasses: 8747 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: 19821 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mModule Splitter: Calculate Dependency Info: 378 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mModule Splitter: Analyze Modules: 139 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mModule Splitter: Assemble Modules: 985 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mModule Splitter: 1624 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Generate Classes: 14505 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Write trees: 2399 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Class tree cache stats: reused: 459 -- invalidated: 0[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Method tree cache stats: reused: 2056 -- invalidated: 0[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Post transforms: total: 36 -- nested: 35 -- nested avoided: 279[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: 26808 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mBasicBackend: Write result: 24723 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mBasicBackend: total modules: 1; re-written: 1[0m

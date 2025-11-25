@@ -1,0 +1,8 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(Compile / fastLinkJS, Some(07d1796d-0b0c-4962-a88d-c3bbf71acc72), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / fastLinkJS[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mFast optimizing C:\Users\mario\EquipeFoot\js\target\scala-3.3.1\equipefoot-js-fastopt[0m
+[0m[[0m[0mdebug[0m] [0m[0mGlobal IR cache stats: reused: 0 -- invalidated: 13 -- trees read: 44[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 3 s, completed 23 nov. 2025, 04:27:41[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[31merror[0m] [0m[0mserver failed to start on local:sbt-server-3f53e3ccf366d69d7b7f. java.io.IOException: Could not create lock for \\.\pipe\sbt-server-3f53e3ccf366d69d7b7f_lock, error 5[0m

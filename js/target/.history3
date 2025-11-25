@@ -1,0 +1,18 @@
+1763864064402:fastLinkJS
+1763865056613:[error] No main module initializer was specified, but scalaJSUseMainModuleInitializer was set to true. You can explicitly specify it either with `mainClass := Some(...)` or with `scalaJSMainModuleInitializer := Some(...)`
+1763865056840:[error] (Compile / scalaJSModuleInitializers) No main module initializer was specified, but scalaJSUseMainModuleInitializer was set to true. You can explicitly specify it either with `mainClass := Some(...)` or with `scalaJSMainModuleInitializer := Some(...)`
+1763865056919:[error] Total time: 3 s, completed 23 nov. 2025, 03:28:30
+1763865090595:fastLinkJS
+1763868134672:Compile / fastLinkJS
+1763868152588:show Compile / fastLinkJSOutput
+1763868165480:Compile
+1763868448065:clean
+1763868457847:Compile / fastLinkJS
+1763868481916:show Compile / fastLinkJSOutput
+1764028490103:compile / fastLinkJS
+1764028510755:Compile / fastLinkJS
+1764028529857:show Compile / fastLinkJSOutput
+1764029675111:clean
+1764029684119:fastLinkJS
+1764029702870:show Compile / fastLinkJS
+1764029912791:js/clean

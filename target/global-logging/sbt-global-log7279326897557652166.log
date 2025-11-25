@@ -1,0 +1,4 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(project js, Some(18527ffd-d529-4e67-87c7-3fe62c19fd14), Some(CommandSource(console0)))[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to equipefoot-js (in build file:/C:/Users/mario/OneDrive/Bureau/ProjetP/EquipeFoot/)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[31merror[0m] [0m[0mserver failed to start on local:sbt-server-66462917dcd62f6a1a8f. java.io.IOException: Could not create lock for \\.\pipe\sbt-server-66462917dcd62f6a1a8f_lock, error 5[0m
