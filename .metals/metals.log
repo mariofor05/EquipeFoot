@@ -34280,3 +34280,126 @@ Exception in thread "pool-509-thread-1" java.lang.InterruptedException
 2025.11.25 03:03:39 WARN  sbt does not support `buildTarget/inverseSources`, unable to fetch targets owning source.
 2025.11.25 03:03:39 WARN  no build target for: C:\Users\mario\EquipeFoot\apps\js\src\main\scala\apps\EDF\UI.scala
 2025.11.25 03:03:39 INFO  no build target found for C:\Users\mario\EquipeFoot\apps\js\src\main\scala\apps\EDF\UI.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.11.25 11:23:58 INFO  no build target found for C:\Users\mario\EquipeFoot\apps\js\src\main\scala\apps\EDF\UI.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.11.25 11:23:58 INFO  no build target found for C:\Users\mario\EquipeFoot\apps\js\src\main\scala\apps\EDF\UI.scala. Using presentation compiler with project's scala-library version: 3.3.6
+nov. 25, 2025 12:12:58 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2025.11.25 12:16:43 INFO  Shutting down server
+2025.11.25 12:16:43 INFO  shutting down Metals
+2025.11.25 12:16:43 INFO  Shut down connection with build server.
+2025.11.25 12:16:43 INFO  Exiting server
+2025.11.26 01:45:13 INFO  Started: Metals version 1.6.3 in folders 'C:\Users\mario\EquipeFoot' for client Visual Studio Code 1.106.2.
+2025.11.26 01:45:14 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2025.11.26 01:45:14 INFO  Attempting to connect to the build server...
+2025.11.26 01:45:29 ERROR Failed to connect with build server, no functionality will work.
+java.util.concurrent.TimeoutException: Future timed out after [15 seconds]
+	at scala.concurrent.Future$.timeoutError(Future.scala:581)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryAwait0(Promise.scala:258)
+	at scala.concurrent.impl.Promise$DefaultPromise.result(Promise.scala:271)
+	at scala.concurrent.Await$.$anonfun$result$1(package.scala:208)
+	at scala.concurrent.BlockContext$DefaultBlockContext$.blockOn(BlockContext.scala:62)
+	at scala.concurrent.Await$.result(package.scala:125)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionScalaFuture.$anonfun$withTimeout$1(MetalsEnrichments.scala:296)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:691)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:500)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2025.11.26 01:50:19 INFO  no build target found for C:\Users\mario\EquipeFoot\apps\shared\src\main\scala\apps\EDF\Types.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.11.26 01:50:19 WARN  no build target for: C:\Users\mario\EquipeFoot\apps\shared\src\main\scala\apps\EDF\Types.scala
+2025.11.26 01:50:19 INFO  no build target found for C:\Users\mario\EquipeFoot\apps\shared\src\main\scala\apps\EDF\Types.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.11.26 01:50:21 INFO  no build target found for C:\Users\mario\EquipeFoot\apps\shared\src\main\scala\apps\EDF\Types.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.11.26 01:50:21 INFO  no build target found for C:\Users\mario\EquipeFoot\apps\shared\src\main\scala\apps\EDF\Types.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.11.26 01:50:21 INFO  no build target found for C:\Users\mario\EquipeFoot\apps\shared\src\main\scala\apps\EDF\Types.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.11.26 01:50:21 INFO  no build target found for C:\Users\mario\EquipeFoot\apps\shared\src\main\scala\apps\EDF\Types.scala. Using presentation compiler with project's scala-library version: 3.3.6
+nov. 26, 2025 1:50:21 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8
+2025.11.26 01:50:21 INFO  no build target found for C:\Users\mario\EquipeFoot\apps\shared\src\main\scala\apps\EDF\Types.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.11.26 01:50:21 INFO  no build target found for C:\Users\mario\EquipeFoot\apps\shared\src\main\scala\apps\EDF\Types.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.11.26 01:50:26 INFO  time: code lens generation in 5.59s
+2025.11.26 01:53:32 INFO  no build target found for C:\Users\mario\EquipeFoot\apps\shared\src\main\scala\apps\EDF\Types.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.11.26 01:53:32 INFO  no build target found for C:\Users\mario\EquipeFoot\apps\shared\src\main\scala\apps\EDF\Types.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.11.26 01:53:35 INFO  no build target found for C:\Users\mario\EquipeFoot\apps\shared\src\main\scala\apps\EDF\Types.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.11.26 01:59:26 INFO  no build target found for C:\Users\mario\EquipeFoot\apps\shared\src\main\scala\apps\EDF\Types.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.11.26 01:59:30 INFO  no build target found for C:\Users\mario\EquipeFoot\apps\shared\src\main\scala\apps\EDF\Types.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.11.26 02:03:26 INFO  Shutting down server
+2025.11.26 02:03:26 INFO  shutting down Metals
+2025.11.26 02:03:26 INFO  Exiting server
+2025.11.26 02:08:13 INFO  Started: Metals version 1.6.3 in folders 'C:\Users\mario\EquipeFoot' for client Visual Studio Code 1.106.2.
+2025.11.26 02:08:13 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2025.11.26 02:08:14 INFO  no build target found for C:\Users\mario\EquipeFoot\apps\shared\src\main\scala\apps\EDF\Types.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.11.26 02:08:14 INFO  Attempting to connect to the build server...
+2025.11.26 02:08:16 INFO  no build target found for C:\Users\mario\EquipeFoot\apps\shared\src\main\scala\apps\EDF\Types.scala. Using presentation compiler with project's scala-library version: 3.3.6
+nov. 26, 2025 2:08:16 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3
+nov. 26, 2025 2:08:16 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5
+nov. 26, 2025 2:08:16 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+nov. 26, 2025 2:08:16 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1
+2025.11.26 02:08:16 INFO  no build target found for C:\Users\mario\EquipeFoot\infosInteressante\infos.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.11.26 02:08:16 INFO  no build target found for C:\Users\mario\EquipeFoot\infosInteressante\infos.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.11.26 02:08:17 WARN  Could not find semantic tokens for: file:///C:/Users/mario/EquipeFoot/infosInteressante/infos.scala
+2025.11.26 02:08:30 ERROR Failed to connect with build server, no functionality will work.
+java.util.concurrent.TimeoutException: Future timed out after [15 seconds]
+	at scala.concurrent.Future$.timeoutError(Future.scala:581)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryAwait0(Promise.scala:258)
+	at scala.concurrent.impl.Promise$DefaultPromise.result(Promise.scala:271)
+	at scala.concurrent.Await$.$anonfun$result$1(package.scala:208)
+	at scala.concurrent.BlockContext$DefaultBlockContext$.blockOn(BlockContext.scala:62)
+	at scala.concurrent.Await$.result(package.scala:125)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionScalaFuture.$anonfun$withTimeout$1(MetalsEnrichments.scala:296)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:691)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:500)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2025.11.26 02:08:30 INFO  no build target found for C:\Users\mario\EquipeFoot\apps\shared\src\main\scala\apps\EDF\Types.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.11.26 02:08:30 WARN  no build target for: C:\Users\mario\EquipeFoot\infosInteressante\infos.scala
+2025.11.26 02:08:30 WARN  no build target for: C:\Users\mario\EquipeFoot\apps\shared\src\main\scala\apps\EDF\Types.scala
+2025.11.26 02:08:32 INFO  no build target found for C:\Users\mario\EquipeFoot\infosInteressante\infos.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.11.26 02:08:32 INFO  time: code lens generation in 2.63s
+2025.11.26 02:08:32 INFO  time: code lens generation in 2.63s
+2025.11.26 02:08:32 INFO  time: code lens generation in 2.63s
+2025.11.26 02:11:57 INFO  no build target found for C:\Users\mario\EquipeFoot\infosInteressante\infos.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.11.26 02:11:57 INFO  no build target found for C:\Users\mario\EquipeFoot\project\plugins.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.11.26 02:11:57 WARN  no build target for: C:\Users\mario\EquipeFoot\project\plugins.sbt
+2025.11.26 02:11:57 INFO  no build target found for C:\Users\mario\EquipeFoot\project\plugins.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.11.26 02:11:57 INFO  no build target found for C:\Users\mario\EquipeFoot\project\plugins.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.11.26 02:11:57 INFO  no build target found for C:\Users\mario\EquipeFoot\project\plugins.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.11.26 02:11:58 INFO  no build target found for C:\Users\mario\EquipeFoot\project\plugins.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.11.26 02:11:58 WARN  Could not find semantic tokens for: file:///C:/Users/mario/EquipeFoot/project/plugins.sbt
+2025.11.26 02:14:10 INFO  Shutting down server
+2025.11.26 02:14:10 INFO  shutting down Metals
+2025.11.26 02:14:11 INFO  Exiting server
+2025.11.26 02:30:40 INFO  Started: Metals version 1.6.3 in folders 'C:\Users\mario\EquipeFoot' for client Visual Studio Code 1.106.2.
+2025.11.26 02:30:40 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2025.11.26 02:30:41 INFO  no build target found for C:\Users\mario\EquipeFoot\project\plugins.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.11.26 02:30:42 INFO  no build target found for C:\Users\mario\EquipeFoot\project\plugins.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.11.26 02:30:43 INFO  Attempting to connect to the build server...
+2025.11.26 02:30:44 WARN  Could not find semantic tokens for: file:///C:/Users/mario/EquipeFoot/project/plugins.sbt
+2025.11.26 02:30:58 ERROR Failed to connect with build server, no functionality will work.
+java.util.concurrent.TimeoutException: Future timed out after [15 seconds]
+	at scala.concurrent.Future$.timeoutError(Future.scala:581)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryAwait0(Promise.scala:258)
+	at scala.concurrent.impl.Promise$DefaultPromise.result(Promise.scala:271)
+	at scala.concurrent.Await$.$anonfun$result$1(package.scala:208)
+	at scala.concurrent.BlockContext$DefaultBlockContext$.blockOn(BlockContext.scala:62)
+	at scala.concurrent.Await$.result(package.scala:125)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionScalaFuture.$anonfun$withTimeout$1(MetalsEnrichments.scala:296)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:691)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:500)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+
+2025.11.26 02:30:58 INFO  no build target found for C:\Users\mario\EquipeFoot\project\plugins.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.11.26 02:30:58 WARN  no build target for: C:\Users\mario\EquipeFoot\project\plugins.sbt
+2025.11.26 02:30:58 INFO  no build target found for C:\Users\mario\EquipeFoot\project\plugins.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.11.26 02:30:58 INFO  no build target found for C:\Users\mario\EquipeFoot\project\plugins.sbt. Using presentation compiler with project's scala-library version: 3.3.6
+2025.11.26 23:17:34 INFO  Shutting down server
+2025.11.26 23:17:34 INFO  shutting down Metals
+2025.11.26 23:17:34 INFO  Exiting server

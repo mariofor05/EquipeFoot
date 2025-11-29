@@ -25,7 +25,7 @@ object UI:
     ensureStyles()
     render()
 
-  // injecte une feuille de style
+  // injecte une feuille de style (si tu utilises style.css, tu peux supprimer cette méthode et l’appel)
   private def ensureStyles(): Unit =
     val existing = document.getElementById("mfprime-styles")
     if existing == null then
@@ -39,6 +39,7 @@ object UI:
         |  background: linear-gradient(135deg, #0b1020, #122b4a);
         |  color: #f5f7ff;
         |}
+        |
         |#app {
         |  min-height: 100vh;
         |}
@@ -201,69 +202,6 @@ object UI:
         |  opacity: 0.9;
         |}
         |
-                |.mf-pitch {
-        |  margin-top: 12px;
-        |  border-radius: 20px;
-        |  background: linear-gradient(#138f3f, #0c6f30);
-        |  padding: 16px 10px;
-        |  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.4),
-        |              0 14px 30px rgba(0, 0, 0, 0.55);
-        |}
-        |
-        |.mf-pitch-row {
-        |  display: flex;
-        |  justify-content: center;
-        |  gap: 18px;
-        |  margin: 10px 0;
-        |}
-        |
-        |.mf-pitch-slot {
-        |  width: 64px;
-        |  height: 64px;
-        |  border-radius: 50%;
-        |  background: rgba(10, 40, 120, 0.95);
-        |  border: 2px solid #ffffff;
-        |  display: flex;
-        |  flex-direction: column;
-        |  align-items: center;
-        |  justify-content: center;
-        |  font-size: 11px;
-        |  text-align: center;
-        |  color: #f5f7ff;
-        |  position: relative;
-        |}
-        |
-        |.mf-pitch-slot-label {
-        |  font-weight: 600;
-        |}
-        |
-        |.mf-pitch-slot-player {
-        |  font-size: 10px;
-        |  opacity: 0.9;
-        |}
-        |
-        |.mf-pitch-slot-btn {
-        |  position: absolute;
-        |  bottom: -10px;
-        |  right: -10px;
-        |  width: 22px;
-        |  height: 22px;
-        |  border-radius: 50%;
-        |  border: none;
-        |  display: flex;
-        |  align-items: center;
-        |  justify-content: center;
-        |  font-size: 14px;
-        |  cursor: pointer;
-        |  background: #3f8dff;
-        |  color: #fff;
-        |  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
-        |}
-        |
-        |.mf-pitch-slot-btn.remove {
-        |  background: #ff5a5a;
-        |}
-        |
         |.mf-pitch {
         |  margin-top: 12px;
         |  border-radius: 20px;
@@ -327,6 +265,57 @@ object UI:
         |  background: #ff5a5a;
         |}
         |
+        |.mf-player-search {
+        |  margin-top: 6px;
+        |  width: 140px;
+        |}
+        |
+        |.mf-player-search-input {
+        |  width: 100%;
+        |  padding: 4px 6px;
+        |  border-radius: 6px;
+        |  border: 1px solid rgba(140, 180, 240, 0.8);
+        |  background: rgba(10, 18, 40, 0.95);
+        |  color: #f5f7ff;
+        |  font-size: 11px;
+        |}
+        |
+        |.mf-player-search-input::placeholder {
+        |  color: rgba(200, 214, 255, 0.6);
+        |}
+        |
+        |.mf-player-suggestions {
+        |  margin-top: 2px;
+        |  max-height: 140px;
+        |  overflow-y: auto;
+        |  border-radius: 8px;
+        |  background: rgba(4, 12, 32, 0.98);
+        |  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.6);
+        |}
+        |
+        |.mf-player-suggestion-item {
+        |  padding: 4px 6px;
+        |  font-size: 11px;
+        |  cursor: pointer;
+        |  display: flex;
+        |  justify-content: space-between;
+        |  align-items: center;
+        |}
+        |
+        |.mf-player-suggestion-item span {
+        |  white-space: nowrap;
+        |  overflow: hidden;
+        |  text-overflow: ellipsis;
+        |}
+        |
+        |.mf-player-suggestion-item small {
+        |  opacity: 0.8;
+        |  margin-left: 4px;
+        |}
+        |
+        |.mf-player-suggestion-item:hover {
+        |  background: rgba(69, 130, 255, 0.35);
+        |}
         |""".stripMargin
       document.head.appendChild(style)
 
@@ -492,7 +481,7 @@ object UI:
     val lineupOpt =
       state.currentLineup match
         case Some(lu) if lu.teamId == team.id => Some(lu)
-        case _                               => None
+        case _                                => None
 
     // header avec select de formation
     val header = document.createElement("div").asInstanceOf[HTMLElement]
@@ -573,7 +562,7 @@ object UI:
 
     section
 
-  // applique une action et rerender
+  // rendu d'un slot sur le terrain avec autocomplete
   private def renderPitchSlot(slot: LineupSlot, team: Team): HTMLElement =
     val elem = document.createElement("div").asInstanceOf[HTMLElement]
     elem.className = "mf-pitch-slot"
@@ -595,43 +584,109 @@ object UI:
       playerSpan.textContent = "[vide]"
       button.textContent = "+"
 
+      import PlayersDb.*
+      import PlayerSearch.*
+
+      // conteneur de recherche dans le slot
+      val searchContainer = document.createElement("div").asInstanceOf[HTMLElement]
+      searchContainer.className = "mf-player-search"
+      searchContainer.style.display = "none"
+
+      val input = document.createElement("input").asInstanceOf[HTMLInputElement]
+      input.`type` = "text"
+      input.placeholder = "Nom du joueur..."
+      input.className = "mf-player-search-input"
+
+      val suggestions = document.createElement("div").asInstanceOf[HTMLElement]
+      suggestions.className = "mf-player-suggestions"
+
+      searchContainer.appendChild(input)
+      searchContainer.appendChild(suggestions)
+      elem.appendChild(searchContainer)
+
+      def clearSuggestions(): Unit =
+        suggestions.innerHTML = ""
+
+      def closeSearch(): Unit =
+        input.value = ""
+        clearSuggestions()
+        searchContainer.style.display = "none"
+
+      def selectTemplate(tpl: PlayersDb.PlayerTemplate): Unit =
+        val rawId = newPlayerId()
+        val preferred = slot.expectedPosition
+        val others =
+          if tpl.preferred == preferred then tpl.others
+          else tpl.preferred +: tpl.others
+
+        // 1) création du joueur dans l'équipe
+        send(
+          ClientToServer.AddPlayer(
+            teamId   = team.id,
+            playerId = rawId,
+            name     = tpl.name,
+            number   = tpl.defaultNumber,
+            preferred = preferred,
+            others   = others
+          )
+        )
+
+        // 2) placement dans le slot
+        send(
+          ClientToServer.PlacePlayerInSlot(
+            teamId   = team.id,
+            slotId   = slot.id,
+            playerId = Some(PlayerId(rawId))
+          )
+        )
+
+      def updateSuggestions(): Unit =
+        clearSuggestions()
+        val q = input.value
+        val results = search(q, limit = 8)
+
+        if results.nonEmpty then
+          results.foreach { tpl =>
+            val item = document.createElement("div").asInstanceOf[HTMLElement]
+            item.className = "mf-player-suggestion-item"
+
+            val nameSpan = document.createElement("span").asInstanceOf[HTMLElement]
+            nameSpan.textContent = tpl.name
+
+            val info = document.createElement("small").asInstanceOf[HTMLElement]
+            info.textContent = s"${tpl.overall}"
+
+            item.appendChild(nameSpan)
+            item.appendChild(info)
+
+            item.addEventListener(
+              "click",
+              (_: dom.Event) =>
+                selectTemplate(tpl)
+                closeSearch()
+            )
+
+            suggestions.appendChild(item)
+          }
+
+      // toggle ouverture/fermeture du champ de recherche
       button.addEventListener(
         "click",
         (_: dom.Event) =>
-          val name = Option(dom.window.prompt("Nom du joueur :", "")).getOrElse("").trim
-          if name.isEmpty then
-            ()
+          if searchContainer.style.display == "none" then
+            searchContainer.style.display = "block"
+            input.focus()
           else
-            val numStr = Option(dom.window.prompt("Numéro du joueur :", "")).getOrElse("").trim
-            val number =
-              try numStr.toInt
-              catch case _: NumberFormatException => -1
-
-            if number <= 0 then
-              dom.window.alert("Numéro invalide.")
-            else
-              val rawId = newPlayerId()
-              val preferred = slot.expectedPosition
-              // 1) on crée le joueur
-              send(
-                ClientToServer.AddPlayer(
-                  teamId   = team.id,
-                  playerId = rawId,
-                  name     = name,
-                  number   = number,
-                  preferred = preferred,
-                  others   = Seq.empty
-                )
-              )
-              // 2) on le place dans ce slot
-              send(
-                ClientToServer.PlacePlayerInSlot(
-                  teamId   = team.id,
-                  slotId   = slot.id,
-                  playerId = Some(PlayerId(rawId))
-                )
-              )
+            closeSearch()
       )
+
+      // mise à jour des suggestions
+      input.addEventListener(
+        "input",
+        (_: dom.Event) =>
+          updateSuggestions()
+      )
+
     else
       val p = maybePlayer.get
       playerSpan.textContent = s"${p.number} · ${p.name}"

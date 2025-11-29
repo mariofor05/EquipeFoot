@@ -1,0 +1,25 @@
+[info] Fast optimizing C:\Users\mario\EquipeFoot\apps\shared\.js\target\scala-3.3.1\shared-test-fastopt
+[debug] Linker: Compute reachability: 766629 us
+[debug] Linker: Assemble LinkedClasses: 68712 us
+[debug] Linker: 862112 us
+[debug] Optimizer: Batch mode: true
+[debug] Optimizer: Incremental part: 345681 us
+[debug] Optimizer: Elidable constructors: 13781 us
+[debug] Optimizer: Optimizing 5713 methods.
+[debug] Optimizer: Optimizer part: 1497015 us
+[debug] Optimizer: 1872073 us
+[debug] Refiner: Compute reachability: 70772 us
+[debug] Refiner: Assemble LinkedClasses: 15772 us
+[debug] Refiner: 87580 us
+[debug] Module Splitter: Calculate Dependency Info: 563 us
+[debug] Module Splitter: Analyze Modules: 129 us
+[debug] Module Splitter: Assemble Modules: 26330 us
+[debug] Module Splitter: 35562 us
+[debug] Emitter: Generate Classes: 1253172 us
+[debug] Emitter: Write trees: 168142 us
+[debug] Emitter: Class tree cache stats: reused: 0 -- invalidated: 726
+[debug] Emitter: Method tree cache stats: reused: 0 -- invalidated: 2989
+[debug] Emitter: Post transforms: total: 4517 -- nested: 57 -- nested avoided: 459
+[debug] Emitter: 1554948 us
+[debug] BasicBackend: Write result: 148464 us
+[debug] BasicBackend: total modules: 1; re-written: 1

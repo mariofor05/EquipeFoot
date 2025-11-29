@@ -1,0 +1,25 @@
+[info] Fast optimizing C:\Users\mario\EquipeFoot\apps\js\target\scala-3.3.1\equipefoot-js-test-fastopt
+[debug] Linker: Compute reachability: 767939 us
+[debug] Linker: Assemble LinkedClasses: 72005 us
+[debug] Linker: 866287 us
+[debug] Optimizer: Batch mode: true
+[debug] Optimizer: Incremental part: 345775 us
+[debug] Optimizer: Elidable constructors: 13956 us
+[debug] Optimizer: Optimizing 7114 methods.
+[debug] Optimizer: Optimizer part: 1388526 us
+[debug] Optimizer: 1775902 us
+[debug] Refiner: Compute reachability: 99226 us
+[debug] Refiner: Assemble LinkedClasses: 58126 us
+[debug] Refiner: 161484 us
+[debug] Module Splitter: Calculate Dependency Info: 10804 us
+[debug] Module Splitter: Analyze Modules: 2897 us
+[debug] Module Splitter: Assemble Modules: 27649 us
+[debug] Module Splitter: 54266 us
+[debug] Emitter: Generate Classes: 1338034 us
+[debug] Emitter: Write trees: 84726 us
+[debug] Emitter: Class tree cache stats: reused: 0 -- invalidated: 840
+[debug] Emitter: Method tree cache stats: reused: 0 -- invalidated: 3777
+[debug] Emitter: Post transforms: total: 5563 -- nested: 57 -- nested avoided: 545
+[debug] Emitter: 1554948 us
+[debug] BasicBackend: Write result: 148471 us
+[debug] BasicBackend: total modules: 1; re-written: 1
