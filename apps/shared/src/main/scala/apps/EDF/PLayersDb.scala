@@ -2,7 +2,7 @@ package apps.EDF
 
 object PlayersDb:
 
-  // Gabarit de joueur "catalogue" (pas un joueur déjà dans une équipe)
+  // Modèle "catalogue" pour les joueurs prédéfinis
   final case class PlayerTemplate(
     name: String,
     overall: Int,
@@ -11,7 +11,7 @@ object PlayersDb:
     others: Seq[Position] = Seq.empty
   )
 
-  // Tous les joueurs disponibles (ici "FC26", à compléter comme tu veux)
+  // Base de données des joueurs dispo (à compléter avec tes joueurs)
   val all: Vector[PlayerTemplate] = Vector(
     PlayerTemplate("Cristiano Ronaldo", 91, 7, Position.BU, Seq(Position.AD, Position.AG)),
     PlayerTemplate("Ronaldinho", 90, 10, Position.MOC, Seq(Position.AG)),
@@ -20,7 +20,7 @@ object PlayersDb:
     PlayerTemplate("Kylian Mbappé", 92, 7, Position.BU, Seq(Position.AG)),
     PlayerTemplate("Andrés Iniesta", 89, 8, Position.MC, Seq(Position.MOC)),
     PlayerTemplate("Xavi Hernández", 89, 6, Position.MC)
-    // ajoute ici tous les joueurs du FC26
+    // ajoute ici tous les joueurs de ton club (FC26 ou autre)
   )
 
 object PlayerSearch:
@@ -30,7 +30,7 @@ object PlayerSearch:
   private def normalize(s: String): String =
     s.trim.toLowerCase
 
-  /** Recherche les joueurs dont le nom contient la requête, triés par note décroissante. */
+  /** Cherche les joueurs dont le nom contient la requête, triés par note décroissante. */
   def search(query: String, limit: Int = 10): Vector[PlayerTemplate] =
     val q = normalize(query)
     if q.length < 3 then Vector.empty
